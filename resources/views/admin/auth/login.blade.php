@@ -12,7 +12,7 @@
         <div class="grid w-full overflow-hidden rounded-[2rem] bg-white shadow-2xl lg:grid-cols-[1.05fr_0.95fr]">
             <div class="hidden bg-blue-950 p-10 text-white lg:flex lg:flex-col lg:justify-between">
                 <div>
-                    <img src="{{ asset('images/abm-logo-clean.png') }}" alt="Logo ABM" class="h-20 w-auto rounded-2xl bg-white p-3">
+                    <img src="{{ asset('images/abm-logo-white.png') }}" alt="ABM Artha Buana Mandiri" class="h-20 w-auto ">
                     <p class="mt-8 text-sm font-semibold uppercase tracking-[0.25em] text-yellow-300">Administrator</p>
                     <h1 class="mt-4 text-3xl font-bold leading-tight">Sistem Informasi Penjualan Obat Pertanian pada Toko ABM Berbasis WEB</h1>
                     <p class="mt-8 max-w-md text-sm leading-6 text-blue-100">Masuk sebagai admin untuk mengatur katalog, memeriksa pesanan customer, dan memperbarui status transaksi.</p>

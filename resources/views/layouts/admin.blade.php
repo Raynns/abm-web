@@ -10,9 +10,9 @@
 <body class="min-h-screen bg-slate-50 text-slate-800 antialiased">
     <div class="min-h-screen lg:flex">
         <aside class="hidden w-72 shrink-0 bg-blue-950 px-5 py-8 text-white lg:block">
-            <div class="rounded-2xl bg-white px-4 py-4 shadow-sm">
-                <img src="{{ asset('images/abm-logo-clean.png') }}" alt="Logo ABM" class="h-14 w-auto">
-                <p class="mt-2 text-xs font-medium text-slate-500">Panel administrasi</p>
+            <div class="px-2 py-2">
+                <img src="{{ asset('images/abm-logo-white.png') }}" alt="ABM Artha Buana Mandiri" class="h-16 w-auto">
+               
             </div>
             <nav class="mt-8 space-y-2 text-sm font-medium" aria-label="Menu admin">
                 <a href="{{ route('admin.dashboard') }}" class="flex items-center gap-3 rounded-xl px-4 py-3 transition-colors {{ request()->routeIs('admin.dashboard') ? 'bg-yellow-400 font-bold text-blue-950 shadow-sm' : 'text-white/90 hover:bg-white/10 hover:text-white' }}">
@@ -22,6 +22,10 @@
                 <a href="{{ route('admin.products.index') }}" class="flex items-center gap-3 rounded-xl px-4 py-3 transition-colors {{ request()->routeIs('admin.products.*') ? 'bg-yellow-400 font-bold text-blue-950 shadow-sm' : 'text-white/90 hover:bg-white/10 hover:text-white' }}">
                     <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="M3 8v9l9 5 9-5V8"/><path d="M12 13v9"/></svg>
                     <span>Kelola Produk</span>
+                </a>
+                <a href="{{ route('admin.categories.index') }}" class="flex items-center gap-3 rounded-xl px-4 py-3 transition-colors {{ request()->routeIs('admin.categories.*') ? 'bg-yellow-400 font-bold text-blue-950 shadow-sm' : 'text-white/90 hover:bg-white/10 hover:text-white' }}">
+                     <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.59 13.41 11 3.83V3H4v7h.83l9.58 9.59a2 2 0 0 0 2.83 0l3.35-3.35a2 2 0 0 0 0-2.83Z"/><circle cx="7.5" cy="6.5" r="1"/></svg>
+                    <span>Kategori</span>
                 </a>
                 <a href="{{ route('admin.orders.index') }}" class="flex items-center gap-3 rounded-xl px-4 py-3 transition-colors {{ request()->routeIs('admin.orders.*') ? 'bg-yellow-400 font-bold text-blue-950 shadow-sm' : 'text-white/90 hover:bg-white/10 hover:text-white' }}">
                     <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3h16v18l-4-2-4 2-4-2-4 2V3Z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>

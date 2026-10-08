@@ -40,7 +40,8 @@
                 </div>
             </article>
         @empty
-            <div class="col-span-full rounded-2xl border border-dashed border-slate-300 bg-white p-12 text-center text-slate-500">Belum ada produk di kategori ini. Admin dapat menambahkannya melalui panel administrasi.</div>
+            <div class="col-span-full rounded-2xl border border-dashed border-slate-300 bg-white p-12 text-center text-slate-500">Belum ada produk tersedia pada kategori ini.
+Silakan pilih kategori lainnya untuk melihat produk yang tersedia.</div>
         @endforelse
     </div>
     <div class="mt-8">{{ $products->links() }}</div>
