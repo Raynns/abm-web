@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@layer base {
+    body {
+        font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    }
+}
+
+@layer components {
+    .abm-focus {
+        @apply focus:border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-100;
+    }
+}
