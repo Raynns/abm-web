@@ -1,0 +1,19 @@
+Komponen dropdown alamat ABM Web.
+
+Gunakan style:
+- rounded-xl
+- border-slate-300
+- focus:border-blue-700
+- focus:ring-blue-100
+
+Field:
+province_id
+regency_id
+district_id
+village_id
+address_detail
+
+JS flow:
+Provinsi dipilih -> load Kabupaten
+Kabupaten dipilih -> load Kecamatan
+Kecamatan dipilih -> load Desa

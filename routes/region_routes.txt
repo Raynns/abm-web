@@ -1,0 +1,7 @@
+Tambahkan ke routes/web.php:
+
+use App\Http\Controllers\RegionController;
+
+Route::get('/regions/regencies/{province}', [RegionController::class, 'regencies']);
+Route::get('/regions/districts/{regency}', [RegionController::class, 'districts']);
+Route::get('/regions/villages/{district}', [RegionController::class, 'villages']);

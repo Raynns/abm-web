@@ -10,6 +10,7 @@ use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\ShopController;
 use App\Http\Middleware\EnsureAdmin;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RegionController;
 
 Route::get('/', [ShopController::class, 'index'])->name('shop.home');
 
@@ -21,6 +22,9 @@ Route::delete('/keranjang/hapus/{productId}', [CartController::class, 'destroy']
 Route::get('/checkout', [CheckoutController::class, 'show'])->name('checkout.show');
 Route::post('/checkout', [CheckoutController::class, 'store'])->middleware('throttle:10,1')->name('checkout.store');
 Route::get('/pesanan/berhasil', [CheckoutController::class, 'success'])->name('checkout.success');
+Route::get('/regions/regencies/{province}', [RegionController::class, 'regencies']);
+Route::get('/regions/districts/{regency}', [RegionController::class, 'districts']);
+Route::get('/regions/villages/{district}', [RegionController::class, 'villages']);
 
 Route::prefix('admin')->group(function () {
     Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
